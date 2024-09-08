@@ -31,6 +31,8 @@ html {
   --initiation-accent-color: #1864AB;
   --yakus-bg-color: #F1E4E4;
   --yakus-accent-color: #A92323;
+  --score-bg-color: #E4DAE7;
+  --score-accent-color: #862E9C;
 }
 
 /*
@@ -335,4 +337,11 @@ h1 {
 }
 #yakus header {
   background-color: var(--yakus-accent-color);
+}
+
+#score {
+  background-color: var(--score-bg-color);
+}
+#score header {
+  background-color: var(--score-accent-color);
 }

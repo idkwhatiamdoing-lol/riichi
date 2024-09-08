@@ -3,8 +3,9 @@
 ➡️ https://zes.sx/riichi
 
 Currently published:
-- Initiation sheet
-- Yaku Cheatsheet for beginners
+- Initiation sheet (beginners)
+- Yaku Cheatsheet for (beginners, intermediate)
+- Scoring companion sheet (intermediate, advanced)
 
 ## Translations
 
