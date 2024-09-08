@@ -27,10 +27,10 @@ html {
  * Colors
  */
 :root {
-  --initiation-bg-color: #F3F3FF;
-  --initiation-accent-color: #070770;
-  --yakus-bg-color: #FCF0F0;
-  --yakus-accent-color: #DD4B4B;
+  --initiation-bg-color: #D4E2ED;
+  --initiation-accent-color: #1864AB;
+  --yakus-bg-color: #F1E4E4;
+  --yakus-accent-color: #A92323;
 }
 
 /*
@@ -177,92 +177,6 @@ textarea {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media all and (max-width: 400px) {
-  .icon-download {
-    display: none;
-  }
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
 /*
  * Titles
  */
@@ -285,7 +199,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3em;
+  margin-top: -100px;
 }
 
 #background {
@@ -311,6 +225,11 @@ main {
   transform: translate(105%, 15%);
 }
 
+#illustration-top {
+  height: 280px;
+  width: 280px;
+}
+
 h1 {
   margin: 0.1em 100% 1.5em;
   font-size: 45px;
@@ -319,35 +238,36 @@ h1 {
 
 .sheet-type {
   position: relative;
-  border: 2px solid;
+  overflow: hidden;
   border-radius: 20px;
-  margin: 1em;
-  margin-bottom: 3em;
-  width: 370px;
+  margin: 0.5em;
+}
+
+.sheet-type header {
+  text-align: center;
 }
 
 .sheet-type .illustration {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
+  display: inline;
+  height: 6em;
 }
 
 .sheet-type h2 {
-  padding-top: 44px;
-  padding-bottom: 24px;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
   margin: 0;
-  text-align: center;
   font-size: 25px;
   letter-spacing: 0.05em;
   color: white;
-  border-radius: 18px 18px 0 0;
-  overflow: hidden;
+}
+
+.sheet-type h2::first-letter {
+  text-transform: capitalize;
 }
 
 .sheet-type ul {
   margin: 0;
-  padding: 1em;
+  padding: 40px;
   list-style-type: none;
 }
 
@@ -363,7 +283,7 @@ h1 {
 .sheet-type .icon-flag {
   height: 1.5em;
   margin-top: -2px;
-  margin-right: 0.7em;
+  margin-right: 1.5em;
 }
 
 .sheet-type li p {
@@ -380,6 +300,7 @@ h1 {
   border: 2px solid currentColor;
   background: white;
   color: black;
+  text-transform: uppercase;
   text-decoration: none;
   padding: 0.3em 0.7em;
   transition: background-color .4s;
@@ -405,13 +326,13 @@ h1 {
 #initiation {
   background-color: var(--initiation-bg-color);
 }
-#initiation h2 {
+#initiation header {
   background-color: var(--initiation-accent-color);
 }
 
 #yakus {
   background-color: var(--yakus-bg-color);
 }
-#yakus h2 {
+#yakus header {
   background-color: var(--yakus-accent-color);
 }
