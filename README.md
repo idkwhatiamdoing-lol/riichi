@@ -21,3 +21,9 @@ A few notes about translations:
 - If they exist, please rely as much as possible on "official translations" provided by recognized organization
 
 You can contact me by email or use a GitHub Pull Request to send me the translation. Keep in mind we may have to discuss some translations to get them to fit in such a restricted space.
+
+## Thanks
+
+- *FluffyStuff* for providing [high-quality SVG mahjong tiles](https://github.com/FluffyStuff/riichi-mahjong-tiles) in the public domain
+- *S. Bautista* for spanish translations
+- *mati* for portuguese translations
